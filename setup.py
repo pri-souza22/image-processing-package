@@ -16,6 +16,6 @@ setup(
   long_description_content_type="text/markdown",
   url="https://github.com/pri-souza22/image-processing-package.git",
   packages=find_packages(),
-  install_requires=requirements,
+  install_requires=["numpy", "opencv-python"],
   python_requires='>=3.8',
 )
