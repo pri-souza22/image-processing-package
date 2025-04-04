@@ -1,21 +1,24 @@
 from setuptools import setup, find_packages
 
-with open("README.md", "r") as f:
-   page_description = f.read()
-  
-with open("requirements.txt") as f:
-   requirements = f.read().splitlines()
-
 setup(
-  name="image-processing-package-pri",
-  version= "0.0.1",
-  author="priscila",
-  author_email="priscilamsouza1826@gmail.com",
-  description="image-processing-package",
-  long_description=page_description,
-  long_description_content_type="text/markdown",
-  url="https://github.com/pri-souza22/image-processing-package.git",
-  packages=find_packages(),
-  install_requires=["numpy", "opencv-python"],
-  python_requires='>=3.8',
+    name="image_processing_package_",
+    version="0.0.1",
+    author="Priscila Souza",
+    author_email="priscilamsouza1826@gmail.com",
+    description="Um pacote para processamento de imagens.",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/pri-souza22/image-processing-package",
+    packages=find_packages(),
+    install_requires=[
+        "numpy",
+        "opencv-python",
+        "matplotlib"
+    ],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.6",
 )
