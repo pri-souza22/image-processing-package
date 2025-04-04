@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="image_processing_package1",
+    name="image_processing_package",
     version="0.0.1",
     author="Priscila Souza",
     author_email="priscilamsouza1826@gmail.com",
